@@ -100,7 +100,7 @@ svg {
 
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -1px;
 
     display: block;
     width: 100%;
@@ -696,4 +696,59 @@ svg {
 .card-link:focus,
 .card-link:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 528px;
+    width: 100%;
+    max-height: 100vh;
+    height: 581px;
+
+    padding: 40px;
+
+    background-color: var(--white-color);
+}
+
+.close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    margin-top: 8px;
+    margin-right: 8px;
+
+    background-color: var(--white-color);
+}
+
+.close-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    fill: currentColor;
 }
