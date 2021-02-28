@@ -649,10 +649,6 @@ svg {
 .filter-btn:focus {
     background-color: var(--blue-color);
     color: var(--white-color);
-}
-
-.filter-btn:focus,
-.filter-btn:hover {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -706,12 +702,10 @@ svg {
     margin-right: 30px;
 }
 
-.card-link{
+.card-link {
     display: block;
 
-    transition: transform var(--animation-time) var(--animation), opacity var(--animation-time) var(--animation), box-shadow var(--animation-time) var(--animation)
-}
-    
+    transition: transform var(--animation-time) var(--animation), opacity var(--animation-time) var(--animation), box-shadow var(--animation-time) var(--animation);
 }
 
 .card-link:focus,
